@@ -28,11 +28,11 @@ function three () {
 
   var three = document.getElementById('three')
 
-  three.classList.add('red')
+  three.classList.add('blue')
 }
 
 function makeVisible() {
   var makeVisible = document.getElementsByClassName('invisible')
 
-  makeVisible[0].classList.add('visible')
+  makeVisible[0].classList.toggle('visible')
 }
