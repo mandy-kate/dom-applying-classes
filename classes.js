@@ -7,6 +7,7 @@ function start () {
   one()
   two()
   three()
+  makeVisible()
 }
 
 function one () {
@@ -18,16 +19,20 @@ function one () {
 
 function two () {
 
-  var one = document.getElementById('two')
+  var two = document.getElementById('two')
 
-  one.classList.add('green')
+  two.classList.add('green')
 }
 
 function three () {
 
-  var one = document.getElementById('three')
+  var three = document.getElementById('three')
 
-  one.classList.add('red')
+  three.classList.add('red')
 }
 
-// CREATE FUNCTION makeVisible HERE
+function makeVisible() {
+  var makeVisible = document.getElementsByClassName('invisible')
+
+  makeVisible[0].classList.add('visible')
+}
